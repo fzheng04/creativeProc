@@ -170,6 +170,25 @@
             info: "Sensors and apps that show available parking spots in real-time, reducing time spent searching for parking by 30%."
           }
         ]
+      },
+      transit: {
+        title: "Public Transit Improvements",
+        subtitle: "Modernize subway systems, expand bus networks, improve accessibility",
+        description: "Comprehensive upgrades to NYC's public transit infrastructure to improve reliability, capacity, and rider experience.",
+        details: [
+          {
+            name: "Signal Modernization",
+            info: "Upgrading the century-old subway signal system with modern communications-based train control (CBTC) to allow more trains per hour and reduce delays by 30%."
+          },
+          {
+            name: "Accessibility Upgrades",
+            info: "Installing elevators and ramps at 100+ subway stations to ensure the system is fully accessible for people with disabilities, strollers, and elderly riders."
+          },
+          {
+            name: "Bus Rapid Transit",
+            info: "Creating dedicated bus lanes with signal priority across all five boroughs, cutting bus travel times by 25% and improving on-time performance to 90%+."
+          }
+        ]
       }
     };
 
@@ -404,14 +423,14 @@
               </button>
 
               <button
-                onClick={() => setSelectedSolution('technology2')}
+                onClick={() => setSelectedSolution('transit')}
                 className="bg-gray-50 p-6 rounded-lg border-2 border-gray-200 hover:border-blue-400 transition-all duration-300 text-left hover:shadow-lg transform hover:scale-105 cursor-pointer"
               >
                 <h3 className="text-xl font-bold text-gray-900 mb-4">
-                  Technology & Innovation
+                Public Transit Improvements
                 </h3>
                 <p className="text-gray-600">
-                  Smart traffic lights, mobility apps, autonomous shuttles.
+                Modernize subway systems, expand bus networks, improve accessibility
                 </p>
               </button>
             </div>
@@ -655,6 +674,136 @@
 
           
         </div>
+        {/* Resources Section */}
+      <div className="bg-gray-100 py-16 px-6">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center">Resources</h2>
+          <p className="text-lg text-gray-600 mb-12 text-center max-w-3xl mx-auto">
+            Data and information sourced from the following organizations and studies.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Government & Transit Agencies */}
+            <div className="bg-white rounded-lg shadow-md p-6">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Government & Transit</h3>
+              <ul className="space-y-3">
+                <li>
+                  <a 
+                    href="https://www.nyc.gov/html/dot/html/home/home.shtml" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-700 font-semibold flex items-center gap-2"
+                  >
+                    NYC Department of Transportation
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                  <p className="text-sm text-gray-600 mt-1">Traffic data, infrastructure projects, and transportation planning</p>
+                </li>
+                <li>
+                  <a 
+                    href="https://new.mta.info/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-700 font-semibold flex items-center gap-2"
+                  >
+                    Metropolitan Transportation Authority (MTA)
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                  <p className="text-sm text-gray-600 mt-1">Subway performance statistics and transit ridership data</p>
+                </li>
+                <li>
+                  <a 
+                    href="https://www.nyc.gov/content/visionzero/pages/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-700 font-semibold flex items-center gap-2"
+                  >
+                    Vision Zero NYC
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                  <p className="text-sm text-gray-600 mt-1">Traffic safety data and cyclist/pedestrian injury statistics</p>
+                </li>
+              </ul>
+            </div>
+
+            {/* Advocacy & Research */}
+            <div className="bg-white rounded-lg shadow-md p-6">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Advocacy & Research</h3>
+              <ul className="space-y-3">
+                <li>
+                  <a 
+                    href="https://www.transalt.org/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-700 font-semibold flex items-center gap-2"
+                  >
+                    Transportation Alternatives
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                  <p className="text-sm text-gray-600 mt-1">Bike lane safety research and street design advocacy</p>
+                </li>
+                <li>
+                  <a 
+                    href="https://www.ridersalliance.org/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-700 font-semibold flex items-center gap-2"
+                  >
+                    Riders Alliance
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                  <p className="text-sm text-gray-600 mt-1">Transit rider advocacy and service improvement campaigns</p>
+                </li>
+                <li>
+                  <a 
+                    href="https://www.census.gov/programs-surveys/acs" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-700 font-semibold flex items-center gap-2"
+                  >
+                    U.S. Census Bureau - American Community Survey
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                  <p className="text-sm text-gray-600 mt-1">Commute time and transportation mode statistics</p>
+                </li>
+              </ul>
+            </div>
+
+            {/* Studies & Reports */}
+            <div className="bg-white rounded-lg shadow-md p-6 md:col-span-2">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Studies & Reports</h3>
+              <ul className="grid md:grid-cols-2 gap-4">
+                <li className="text-gray-700">
+                  <strong>INRIX Global Traffic Scorecard</strong> - Annual traffic congestion analysis and cost estimates
+                </li>
+                <li className="text-gray-700">
+                  <strong>NYC Mobility Report</strong> - NYC DOT's comprehensive annual transportation data
+                </li>
+                <li className="text-gray-700">
+                  <strong>MTA Capital Program</strong> - Infrastructure modernization plans and timelines
+                </li>
+                <li className="text-gray-700">
+                  <strong>NYC Bicycle Crash Data</strong> - NYPD collision data and Vision Zero analysis
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
         {/* Footer */}
         <div className="bg-gray-900 text-white py-8 px-6">
           <div className="max-w-6xl mx-auto text-center">
